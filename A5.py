@@ -1,3 +1,5 @@
+#BT19ECE057
+#Jayvardhan Patil
 #Assignment5:
 #Histogram Equalization on an Image.
 
