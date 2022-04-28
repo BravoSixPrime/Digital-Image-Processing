@@ -44,13 +44,13 @@ for i in range(0,len(unique_array)):
                 continue
 
 #Dispalying original image, image after Histogram Equalization using manual and built-in function 
-cv2.imshow('Original Image',gray_image)
+cv2.imwrite('5/Original Image.jpg',gray_image)
 cv2.waitKey(0)
-cv2.imshow('Histogram equalization on Image ',gray_image_1)
+cv2.imwrite('5/Histogram equalization on Image.jpg ',gray_image_1)
 cv2.waitKey(0)
 
 #Now using built-in function 'equalizeHist' and comparing the results
-cv2.imshow('Histogram equalization on Image with built-in function',cv2.equalizeHist(gray_image))
+cv2.imwrite('5/Histogram equalization on Image with built-in function.jpg',cv2.equalizeHist(gray_image))
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 

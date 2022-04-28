@@ -25,8 +25,8 @@ for y in range(image.shape[0]):
             Increased_contrast[y,x,c] = np.clip(alpha_1*image[y,x,c] + beta, 0, 255)
 
 #Dispalying Images
-cv2.imshow("Original Image",image)
-cv2.imshow("Contrast Increased Image", Increased_contrast)
-cv2.imshow("Contrast Decreased Image", Decreased_contrast)
+cv2.imwrite("6/Original Image.jpg",image)
+cv2.imwrite("6/Contrast Increased Image.jpg", Increased_contrast)
+cv2.imwrite("6/Contrast Decreased Image.jpg", Decreased_contrast)
 cv2.waitKey(0)
 cv2.destroyAllWindows()

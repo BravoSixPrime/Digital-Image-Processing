@@ -30,10 +30,14 @@ for x in range(35,270,1):         #Making some part of the image black
        result_image[x][y] = 0
 
 #Dispalying the Images
-cv2.imshow("original Image",image)
+# cv2.imshow("original Image",image)
+cv2.imwrite("2/original Image.jpg",image)
+
 cv2.waitKey(0)
 cv2.imshow('Grayscale Image',gray_image)
+cv2.imwrite('2/Grayscale Image.jpg',gray_image)
 cv2.waitKey(0)
 cv2.imshow('New Image',result_image)
+cv2.imwrite('2/New Image.jpg',result_image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()

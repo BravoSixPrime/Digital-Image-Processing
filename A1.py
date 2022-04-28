@@ -40,11 +40,15 @@ for x in range(m):        #Adding a constant value '34' to image
 
 #Dispalying the Images
 cv2.imshow("original Image",image)
+cv2.imwrite("1/original Image.jpg",image)
 cv2.waitKey(0)
 cv2.imshow('Grayscale Image',gray_image)
+cv2.imwrite('1/Grayscale Image.jpg',gray_image)
 cv2.waitKey(0)
-cv2.imshow('Bianry Image',binary_image)
+cv2.imshow('Binary Image',binary_image)
+cv2.imwrite('1/Binary Image.jpg',binary_image)
 cv2.waitKey(0)
-cv2.imshow('Grayscale Image + constant value ',added_const) 
+cv2.imshow('Grayscale Image + constant value ',added_const)
+cv2.imwrite('1/Grayscale Image + constant value.jpg',added_const) 
 cv2.waitKey(0)
 cv2.destroyAllWindows()

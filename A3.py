@@ -19,30 +19,40 @@ Image_2 = cv2.rectangle(Image_2,(100,300),(330,190),(255,255,255),-1)   # White 
 # Now performing logic operations and displaying the output images
 
 cv2.imshow("white circle at center image",Image_1)
+
+cv2.imwrite("3/white circle at center image.jpg",Image_1)
 cv2.waitKey(0)
 cv2.imshow("white rectangle at center image",Image_2)
+cv2.imwrite("3/white rectangle at center image.jpg",Image_2)
 cv2.waitKey(0)
 
 # AND operation
 cv2.imshow("AND operation",cv2.bitwise_and(Image_1,Image_2))
+cv2.imwrite("3/AND operation.jpg",cv2.bitwise_and(Image_1,Image_2))
+
 cv2.waitKey(0)
 
 # OR operation
 cv2.imshow("OR operation",cv2.bitwise_or(Image_1,Image_2))
+cv2.imwrite("3/OR operation.jpg",cv2.bitwise_or(Image_1,Image_2))
 cv2.waitKey(0)
 
 # NAND operation
 cv2.imshow("NAND operation",cv2.bitwise_not(cv2.bitwise_and(Image_1,Image_2)))
+cv2.imwrite("3/NAND operation.jpg",cv2.bitwise_not(cv2.bitwise_and(Image_1,Image_2)))
 cv2.waitKey(0)
 
 # NOR operation
 cv2.imshow("NOR operation",cv2.bitwise_not(cv2.bitwise_or(Image_1,Image_2)))
+cv2.imwrite("3/NAND operation.jpg",cv2.bitwise_not(cv2.bitwise_or(Image_1,Image_2)))
 cv2.waitKey(0)
 
 # EX-OR operation
 cv2.imshow("EXOR operation",cv2.bitwise_xor(Image_1,Image_2))
+cv2.imwrite("3/EXOR operation.jpg",cv2.bitwise_xor(Image_1,Image_2))
 cv2.waitKey(0)
 
 # EX-NOR operation
 cv2.imshow("EXNOR operation",cv2.bitwise_not(cv2.bitwise_xor(Image_1,Image_2)))
+cv2.imwrite("3/EXNOR operation.jpg",cv2.bitwise_not(cv2.bitwise_xor(Image_1,Image_2)))
 cv2.waitKey(0)
